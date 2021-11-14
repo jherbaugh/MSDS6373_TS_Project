@@ -251,7 +251,7 @@ for( i in 1: sims)
 
 Univariate analysis on the HSI Private Domestic Price Index This is the Price Index of private housing in Hong Kong.
 ```{r Price_Index , echo=FALSE}
-hk.ind <- hk_eda$Private.Domestic..Price.Index
+hk.ind <- hk_eda$Private_Domestic.Price_Index.
 
 
 #plotting different time frames in data to game insight
