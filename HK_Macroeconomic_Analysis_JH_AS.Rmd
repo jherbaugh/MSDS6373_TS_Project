@@ -172,8 +172,10 @@ print(paste0('Long Term ARIMA(2,1,2) ASE: ',round(ASE.scale4,2)))
 
 
 #Long Term ARIMA ASE: 538957.77
+```
 
-
+HSI_Volume model Rolling Window ASE
+```{r Price_Volume model ASE, include=FALSE}
 #Rolling Window ASE
 
 Rolling_Window_ASE = function(series, trainingSize, horizon = 1, s = 0, d = 0, phis = 0, thetas = 0)
@@ -380,12 +382,16 @@ x = hk.ind
 x.pred.ind4 = fore.aruma.wge(hk.ind,s=365,est.hk.ind$phi,theta = est.hk.ind$theta, n.ahead = 1825, lastn = FALSE,limits = FALSE)
 ASE.ind4 = mean((x[(length(x)-n1+1):(length(x))]-x.pred.ind4$f)^2)
 print(paste0('Long Term ARIMA(11,2,4) ASE: ',round(ASE.ind4,2)))
-
-
-
 #Long Term ARIMA(11,2,4) ASE: 8384.81
 
+```
 
+
+
+
+
+Price_Volume model Rolling Window ASE
+```{r Price_Volume model ASE, include=FALSE}
 #Rolling Window ASE
 
 Rolling_Window_ASE = function(series, trainingSize, horizon = 1, s = 0, d = 0, phis = 0, thetas = 0)
